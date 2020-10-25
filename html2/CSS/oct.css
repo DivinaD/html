@@ -1,0 +1,94 @@
+h1{
+    /* Using the custom font we've included in the HTML tab: */
+    font-family: Satisfy, cursive;
+    color: #857b7b;
+    font-weight:normal;
+    font-size:24px;
+    padding-top: 60px;
+    text-shadow: 2px 2px 2px #660123;
+}
+
+
+
+body{
+	background: #171212;
+}
+header{
+    font-size: 120px;
+     text-align: center;
+      
+      line-height: 30vh;
+     color: #fcedd8;
+     /*background: url('C:/html/imgs/ohead1.JPG'),no-repeat;
+     background-position: center;
+     background-size: cover;*/
+     font-family: 'Niconne', cursive;
+     font-weight: 700;
+      text-shadow: 2.5px 2.5px 0px #eb452b, 
+                  5px 5px 0px #efa032, 
+                  7.5px 7.5px 0px #46b59b, 
+                  10px 10px 0px #017e7f, 
+                  12.5px 12.5px 0px #052939, 
+                  15px 15px 0px #c11a2b, 
+                  17.5px 17.5px 0px #c11a2b, 
+                  20px 20px 0px #c11a2b, 
+                  22.5px 22.5px 0px #c11a2b;
+}
+
+video{
+	width: 70%;
+	height: 70%;
+}
+p{
+    text-align: center;
+    font-family: "Helvetica";
+    font-size:0.8rem;
+}
+
+a{
+    color: #d52e3f;
+    text-decoration: none;
+    font-family: 'Niconne', cursive;
+    font-size: 1.2rem;
+    margin:10px;
+
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  color: #b6442f;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
